@@ -73,8 +73,8 @@ with col1:
     is_lunar = True if calendar_type == "农历 (阴历)" else False
 
 with col2:
-    birthday = st.date_input("🎂 出生日期", datetime.date(1979, 11, 18), min_value=datetime.date(1900, 1, 1))
-    birth_time = st.time_input("⏰ 出生时间", datetime.time(9, 33))
+    birthday = st.date_input("🎂 出生日期", datetime.date(2000, 1, 1), min_value=datetime.date(1900, 1, 1))
+    birth_time = st.time_input("⏰ 出生时间", datetime.time(12, 0))
 
 # ==========================================
 # 🚀 魔法核心：从云端保险箱自动读取 Key
