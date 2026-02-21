@@ -26,7 +26,7 @@ def calculate_bazi(year, month, day, hour, minute, is_lunar=False):
 def generate_reading(bazi_str, day_master, api_key):
     genai.configure(api_key=api_key)
     # 使用最新的稳定版模型
-    model = genai.GenerativeModel('gemini-2.5-pro')
+    model = genai.GenerativeModel('gemini-2.5-flash')
     
     prompt = f"""
     # Role: AI 命理预测大师 (传统玄学与现代心理学双修)
