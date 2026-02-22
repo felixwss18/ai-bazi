@@ -73,6 +73,55 @@ def generate_reading(bazi_str, day_master, api_key):
 # 3. 前端网页：极简版 UI
 # ==========================================
 st.set_page_config(page_title="AI 命理师", page_icon="🔮", layout="wide")
+# ==========================================
+# 💎 注入高级 UI 样式 (CSS 魔法)
+# ==========================================
+st.markdown("""
+<style>
+    /* 1. 隐藏 Streamlit 官方的右上角菜单、底部水印和顶部装饰条 */
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    
+    /* 2. 全局背景优化 (打造高级的暗夜玄学风) */
+    .stApp {
+        background-color: #0E1117;
+        font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    }
+    
+    /* 3. 让输入框看起来更高端 */
+    div[data-baseweb="select"] > div, div[data-baseweb="input"] > div {
+        background-color: #1E2329 !important;
+        border-radius: 8px !important;
+        border: 1px solid #333 !important;
+        color: white !important;
+    }
+    
+    /* 4. 🌟 终极必杀：极光渐变色大按钮 */
+    div.stButton > button:first-child {
+        background: linear-gradient(135deg, #FF416C 0%, #FF4B2B 100%) !important;
+        color: white !important;
+        font-size: 18px !important;
+        font-weight: bold !important;
+        border-radius: 12px !important;
+        border: none !important;
+        padding: 15px 24px !important;
+        box-shadow: 0 4px 15px rgba(255, 65, 108, 0.4) !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    /* 按钮悬停时的动态发光效果 */
+    div.stButton > button:first-child:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 6px 20px rgba(255, 65, 108, 0.6) !important;
+    }
+    
+    /* 5. 优化分割线的质感 */
+    hr {
+        border-top: 1px solid #2B2B2B !important;
+    }
+</style>
+""", unsafe_allow_html=True)
 
 st.title("🔮 我的专属 AI 命理师")
 st.write("输入出生信息，一键排盘并自动生成万字命理解析报告。")
