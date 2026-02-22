@@ -123,7 +123,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.title("🔮 我的专属 AI 命理师")
+st.title("🔮 我的 AI 命理师 🔮")
 st.write("输入出生信息，一键排盘并自动生成万字命理解析报告。")
 st.divider()
 
