@@ -124,7 +124,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.title("🔮 我的 AI 命理师 🔮")
-st.write("输入出生信息，一键排盘并自动生成万字命理解析报告。")
+st.write("输入出生信息，一键排盘并自动生成命理解析报告。")
 st.divider()
 
 col1, col2 = st.columns(2)
@@ -142,8 +142,8 @@ with col2:
 # 无论谁打开网页，代码都会自动去刚才设置的 Secrets 里找钥匙
 api_key_secret = st.secrets["GEMINI_API_KEY"]
 
-if st.button("✨ 立即排盘 & 呼叫 AI 解读 ✨", type="primary", use_container_width=True):
-    with st.spinner("🔮 八字引擎与 AI 模型正在高速运转中，请稍候 10 秒..."):
+if st.button("✨ 立即排盘 & AI 解读 ✨", type="primary", use_container_width=True):
+    with st.spinner("🔮 八字引擎与 AI 模型正在高速运转中，请稍候 15 秒..."):
         try:
             result = calculate_bazi(birthday.year, birthday.month, birthday.day, birth_time.hour, birth_time.minute, is_lunar)
             # 使用保险箱里的钥匙呼叫 AI
