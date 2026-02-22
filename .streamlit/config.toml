@@ -1,0 +1,15 @@
+[theme]
+# 主题色：就是你按钮、加载动画的主色调（极光橙红）
+primaryColor="#FF4B2B"
+
+# 背景色：高级的深邃暗夜黑
+backgroundColor="#0E1117"
+
+# 次要背景色：输入框和背景面板的颜色（稍微亮一点的黑）
+secondaryBackgroundColor="#1E2329"
+
+# 字体颜色：纯净白
+textColor="#FAFAFA"
+
+# 字体风格：现代无衬线体
+font="sans serif"
