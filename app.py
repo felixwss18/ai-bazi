@@ -155,13 +155,7 @@ if st.button("✨ 立即排盘 & AI 解读 ✨", type="primary", use_container_w
             
             st.divider()
             st.markdown(ai_report) 
-            # ==========================================
-            # 💰 新增：高情商打赏与结缘模块
-            # ==========================================
-            st.divider()
-            st.markdown("### ☕ 结缘与赞助")
-            st.write("如果这份由传统玄学与现代心理学碰撞出的专属报告，为您带来了启发或力量，欢迎随喜打赏，请主理人喝杯咖啡！您的支持是我们持续升级 AI 引擎的最大动力。")
-
+            
             try:
                 # 这里的 "qr.jpg" 必须和你上传的图片名字一模一样
                 st.image("qr.jpg", width=250, caption="支持 Touch 'n Go / DuitNow 扫码")
