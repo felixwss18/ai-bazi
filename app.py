@@ -156,11 +156,7 @@ if st.button("✨ 立即排盘 & AI 解读 ✨", type="primary", use_container_w
             st.divider()
             st.markdown(ai_report) 
             
-            try:
-                # 这里的 "qr.jpg" 必须和你上传的图片名字一模一样
-                st.image("qr.jpg", width=250, caption="支持 Touch 'n Go / DuitNow 扫码")
-            except Exception as e:
-                st.info("💡 提示：请确保已将打赏二维码 (qr.jpg) 上传至系统。")
+           
             
         except Exception as e:
             st.error(f"❌ 哎呀，AI 接口调用出错啦。错误详情：{e}")
